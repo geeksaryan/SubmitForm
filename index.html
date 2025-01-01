@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolSubmitForm</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/8443/8443356.png">
+    <!-- <link rel="stylesheet" href="login.css"/> -->
+</head>
+<!-- <body style="background-color: aqua;"> -->
+    <div style="font-size: large;">
+        <marquee style="color: blue;" ><h3>Login Form of Webpage</h3></marquee>
+    <center>
+        <form type="signup_process" method="post" autocomplete="on" >
+            <center><h2>Submit Form</h2></center>
+            <table border="1" width="" cellspacing="5" cellpadding="3">
+                <tr>
+                    <td>
+                        <label for="login_id" >Login By:</label>
+                    </td>
+                    <td>
+                        <input type="radio" value="Teacher" name="Role" id="login_id" required>Teacher
+                        <input type="radio" value="Teacher" name="Role" id="login_id"required>Student 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="user_id">Username</label></td>
+                    <td><input type="text" required placeholder="Enter Username" id="user_id"  </td>
+                </tr>
+                <tr>
+                    <td><label for="mobile_id">Enter Mobile No</label></td>
+                    <td><input type="number" pattern="[0-9]{10}" placeholder="Enter Your Mobile Number" id="mobile_id" required</td>
+                </tr>
+                <tr>
+                    <td><label for="email_id">E-mail id</label></td>
+                    <td><input type="email" placeholder="Enter Your E-mail" id="email_id" required</td>
+                </tr>
+                <tr>
+                    <td><label for="country_id">Your Country</label></td>
+                    <td>
+                        <select name="Country" id="country_id" required>
+                            <option value="India">India</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Noida">Noida</option>
+                            <option value="Haryana">Haryanai</option>
+                            <option value="Bihar">Bihar</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="password_id">Password</label></td>
+                    <td><input type="password" placeholder="Enter Password" id="password_id" required</td>
+                </tr>
+                <tr>
+                    <td><label for="cpassword_id">Confirm Password</label></td>
+                    <td><input type="password" placeholder="Confirm Password" id="cpassword_id" required</td>
+                </tr>
+                <tr>
+                    <td><label for="file_id">Select File</label></td>
+                    <td><input type="file" placeholder="" id="file_id" multiple</td>
+                </tr>
+                <tr>
+                    <td><input type="reset" value="Reset Form"</td>
+                    <input type="submit" value="Submit Form"
+                </tr>
+            </table>
+        </form>
+    </center>
+    </div>
+    
+</body>
+</html>
